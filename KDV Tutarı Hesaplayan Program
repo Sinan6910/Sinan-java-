@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	System.out.println("************** KDV Tutarı Hesaplayan Program ***************");
+	Scanner para= new Scanner(System.in);
+	
+    System.out.print("lutfen para miktarinizi giriniz:");
+	int tutar=para.nextInt();
+	
+	double kdvsizFiyat,kdvliFiyat,kdvTutar;
+	
+	if(tutar>=1000) {
+		double kdvOranı=0.08;
+		kdvsizFiyat=tutar;
+		kdvTutar=kdvsizFiyat*kdvOranı;
+		kdvliFiyat=tutar+kdvTutar;
+		System.out.println("kdv'siz fiyat: "+kdvsizFiyat);
+		System.out.println("kdv'li fiyat:"+kdvliFiyat);
+		System.out.println("kdv tutari:"+kdvTutar);
+		
+			
+	}
+	else {
+		double kdvOranı=0.18;
+		kdvsizFiyat=tutar;
+		kdvTutar=kdvsizFiyat*kdvOranı;
+		kdvliFiyat=tutar+kdvTutar;
+		System.out.println("kdv'siz fiyat: "+kdvsizFiyat);
+		System.out.println("kdv'li fiyat:"+kdvliFiyat);
+		System.out.println("kdv tutari:"+kdvTutar);
+		
+	}
+	
+	
+	
+
+	}
+
+}
