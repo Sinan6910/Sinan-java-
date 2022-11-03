@@ -1,0 +1,39 @@
+package odev1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("************* Not Programı**************");
+		Scanner not= new Scanner(System.in);
+		
+		System.out.println("lutfen matematik notunuzu giriniz: ");
+		int matematik=not.nextInt();
+		
+		System.out.println("lutfen fizik notunuzu giriniz: ");
+		int fizik=not.nextInt();
+		
+		System.out.println("lutfen kimya notunuzu giriniz: ");
+		int kimya=not.nextInt();
+		
+		System.out.println("lutfen turkce notunuzu giriniz: ");
+		int turkce=not.nextInt();
+		
+		System.out.println("lutfen tarih notunuzu giriniz: ");
+		int tarih=not.nextInt();
+		
+		System.out.println("lutfen muzik notunuzu giriniz: ");
+		int muzik=not.nextInt();
+		
+		int toplam= matematik+fizik+kimya+turkce+tarih+muzik;
+		double ortalama= toplam/6;
+		boolean result=ortalama>60;
+		String durum = result ? "gectiniz":"kaldınız";
+		
+		System.out.println(durum);
+		
+
+	}
+
+}
