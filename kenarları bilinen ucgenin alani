@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("*******  Üç kenar uzunluğunu kullanıcıdan alinan üçgenin alanını hesaplayan program ******");
+		Scanner kenar=new Scanner(System.in);
+		
+		System.out.println("1. kenari giriniz: ");
+		int kenar1=kenar.nextInt();
+		
+		System.out.println("2. kenari giriniz: ");
+		int kenar2=kenar.nextInt();
+		
+		System.out.println("3. kenari giriniz: ");
+		int kenar3=kenar.nextInt();
+		
+		double u=(kenar1+kenar2+kenar3)/2;
+		double alan;
+		alan=Math.sqrt((u)*(u-kenar1)*(u-kenar2)*(u-kenar3));
+		System.out.println("ucgenin alanı: "+alan);
+	
+		
+		
+	}
+
+}
