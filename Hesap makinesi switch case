@@ -1,0 +1,45 @@
+package hesapMakinesi;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("************** Hesap Makinesi **************");
+		
+		Scanner sayi=new Scanner(System.in);
+		System.out.println("lutfen 1. sayiyi giriniz: ");
+		double number1=sayi.nextDouble();
+		
+		System.out.println("lutfen 2. sayiyi giriniz: ");
+		double number2=sayi.nextDouble();
+		
+		
+		Scanner select1=new Scanner(System.in);
+		System.out.println("Hangi işlemi yapmak istiyorsanız onu secin. Toplama:1, cıkarma:2 carpma:3, Bolme:4 ");
+		int select =select1.nextInt();
+		
+		switch(select) {
+		case 1:
+			System.out.println("sonuc:"+(number1+number2));
+		    break;
+		
+		case 2:
+			System.out.println("sonuc:"+(number1-number2));
+		    break;
+		
+		case 3:
+			System.out.println("sonuc:"+(number1*number2));
+		    break;
+		    
+		case 4:
+			System.out.println("sonuc:"+(number1/number2));
+		    break;  
+		
+		default: System.out.println("hatali giriş yaptiniz tekrar deneyiniz:");    
+			
+		}
+
+	}
+
+}
