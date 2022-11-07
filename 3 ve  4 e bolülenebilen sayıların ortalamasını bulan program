@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	Scanner sayi=new Scanner(System.in);
+	System.out.println("sayi giriniz: ");
+	int number=sayi.nextInt();
+	int toplam=0;
+	int sayac=0;
+	
+	
+	for(int i=1;i<=number;i++) {
+		if(i%3==0 && i%4==0) {
+			System.out.println(i);
+			toplam+=i;
+			sayac++;
+		}
+	}
+	int ortalama=toplam/sayac;
+	System.out.println("ortalama: "+ortalama);
+
+	}
+
+}
