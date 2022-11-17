@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		double toplam;
+		double priceArmut=2.14,priceElma=3.67 , priceDomates=1.11 ,priceMuz= 0.95, pricePatlican=5;
+		Scanner a =new Scanner(System.in);
+		System.out.println("kac kilo armut:");
+		int armut=a.nextInt();
+		
+		System.out.println("kac kilo elma:");
+		int elma=a.nextInt();
+		
+		System.out.println("kac kilo domates:");
+		int domates=a.nextInt();
+		
+		System.out.println("kac kilo muz:");
+		int muz=a.nextInt();
+		
+		System.out.println("kac kilo patlican:");
+		int patlıcan=a.nextInt();
+		
+		toplam=(armut*priceArmut)+(elma*priceArmut)+(domates*priceDomates)+(muz*priceMuz)+(patlıcan*pricePatlican);
+		System.out.println("odemeniz gereken miktar: "+toplam+"tl dir..........");
+
+	}
+
+}
