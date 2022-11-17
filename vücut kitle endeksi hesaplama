@@ -1,0 +1,12 @@
+double vke;
+		Scanner a =new Scanner(System.in);
+		System.out.println("lutfen kilonuzu giriniz:");
+		int kilo=a.nextInt();
+		
+		System.out.println("lutfen boyunuzu giriniz:");
+		double boy=a.nextDouble();
+		
+		vke=kilo/(boy*boy);
+		System.out.println("vucut kitle endeksiniz: "+vke);
+		
+		
